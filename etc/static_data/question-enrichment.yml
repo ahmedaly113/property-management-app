@@ -1,0 +1,162 @@
+mandatory_fields:
+  - Model
+  - Serial Number
+  - No Ways
+  - No Spare Ways
+  - Manufacturer
+  - Refrigerant Type
+  - Refrigerant Volume
+  - Safe Working Load
+  - Safe Working Pressure
+  - Rating (
+  - SWL (
+integer_fields:
+  - Rating (
+  - Refrigerant Weight
+  - No Ways
+  - No Spare Ways
+  - Number of controls
+mapping:
+  Quantity:
+    key: quantity
+    copy: false
+    element: facets
+    group: Description
+    label: Quantity
+  Condition:
+    key: condition
+    copy: true
+    element: facets
+    group: Description
+    label: Condition
+  Manufacturer:
+    key: manufacturer
+    copy: true
+    element: facets
+    group: Information
+    label: Manufacturer
+  Model:
+    key: model
+    copy: true
+    element: facets
+    group: Information
+    label: Model
+  Condition Description (Must be a sentence):
+    key: condition
+    copy: true
+    element: notes
+    group: Information
+    label: Condition Description
+    help: Must be a sentence
+  Local Asset Description:
+    key: description
+    copy: true
+    element: notes
+    group: Description
+    label: Local Asset Description
+  Notes:
+    key: notes
+    copy: true
+    element: notes
+    group: Information
+    label: Notes
+  Barcode:
+    key: barcode
+    copy: false
+    element: facets
+    label: Barcode
+  Existing Asset Number:
+    key: existing-asset-number
+    copy: false
+    element: facets
+    label: Existing Asset Number
+  Serial Number:
+    key: serial-number
+    copy: false
+    element: facets
+    label: Serial Number
+  Maintenance Requirement:
+    key: maintenance-requirement
+    copy: true
+    element: facets
+    label: Maintenance Requirement
+    group: Information
+  Phase Rating (kW):
+    key: rating-phase-kW
+    ratingGroup: Power
+    help: phase-kW
+    element: rating
+    label: Phase Rating (kW)
+  Rating (kW):
+    key: rating-kW
+    ratingGroup: Power
+    help: kW
+    element: rating
+    label: Rating (kW)
+  Rating (Cooling kW):
+    key: rating-cooling-kW
+    ratingGroup: Power
+    help: cooling-kW
+    element: rating
+    label: Rating (Cooling kW)
+  Rating (W):
+    key: rating-W
+    ratingGroup: Power
+    help: W
+    element: rating
+    label: Rating (W)
+  Rating (A):
+    key: rating-A
+    ratingGroup: Current
+    help: A
+    element: rating
+    label: Rating (A)
+  Rating (KVA):
+    key: rating-KVA
+    ratingGroup: Current
+    help: KVA
+    element: rating
+    label: Rating (KVA)
+  Rating (m3/Sec):
+    key: rating-m3-Sec
+    ratingGroup: Area
+    help: m3-Sec
+    element: rating
+    label: Rating (m3/Sec)
+  Rating (m3):
+    key: rating-m3
+    ratingGroup: Area
+    help: m3
+    element: rating
+    label: Rating (m3)
+  SWL (KG):
+    key: rating-swl-KG
+    ratingGroup: Mass
+    help: swl-swl-KG
+    element: rating
+    label: SWL (KG)
+  Rating (KG):
+    key: rating-KG
+    ratingGroup: Mass
+    help: KG
+    element: rating
+    label: Rating (KG)
+  Rating (Litres per Second) & L/SRating (Litres):
+    key: rating-litres-per-sec
+    ratingGroup: Volume
+    help: litres-per-sec
+    element: rating
+    label: Rating (Litres per Second) & L/SRating (Litres)
+  Rating (Litres per Hour):
+    key: rating-litres-per-hour
+    ratingGroup: Volume
+    help: litres-per-hour
+    element: rating
+    label: Rating (Litres per Hour)
+  Safe Working Pressure (Bar):
+    key: rating-safe-working-pressure-bar
+    ratingGroup: Pressure
+    help: safe-working-pressure-bar
+    element: rating
+    label: Safe Working Pressure (Bar)
+
