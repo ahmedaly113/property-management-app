@@ -60,27 +60,27 @@ function login(email, password) {
 }
 
 export const loginAsSurveyor = () => {
-  login('surveyor@testtenant.com', 'Realm34$')
+  login('surveyor@testtenant.com', 'Artb121$')
 }
 
 export const loginAsGlobalSurveyor = () => {
-  login('surveyor@realestateams.com', 'Realm34$')
+  login('surveyor@realestateams.com', 'Artb121$')
 }
 
 export const loginAsSurveyorToTentantWithVAAtSpace = () => {
-  login('surveyor@edgehill.co.uk', 'Realm34$')
+  login('surveyor@edgehill.co.uk', 'Artb121$')
 }
 
 export const loginAsSurveyorToPrototype = () => {
-  login('surveyor-cp@realestateams.com', 'Realm34$')
+  login('surveyor-cp@realestateams.com', 'Artb121$')
 }
 
 export const loginAsCustomer = () => {
-  login('customer@testtenant.com', 'Realm34$')
+  login('customer@testtenant.com', 'Artb121$')
 }
 
 export const loginAsCustomerToPrototype = () => {
-  login('customer-cp@realestateams.com', 'Realm34$')
+  login('customer-cp@realestateams.com', 'Artb121$')
 }
 
 export const logout = () => {

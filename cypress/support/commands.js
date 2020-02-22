@@ -75,7 +75,7 @@ Cypress.Commands.add('configureAmplify', mwaConfig => {
     aws_appsync_region: region,
     aws_appsync_authenticationType: authenticationType,
   })
-  Auth.signIn('surveyor@testtenant.com', 'Realm34$')
+  Auth.signIn('surveyor@testtenant.com', 'Artb121$')
 })
 
 Cypress.Commands.add('completeSurveyor', () => {
@@ -264,7 +264,7 @@ Cypress.Commands.add('createAssetWithImageInOtherTenant', () => {
               {
                 dataUri: null,
                 picture: {
-                  bucket: 'reams-elias-mwa-dev-tenant1-images',
+                  bucket: 'artb-elias-mwa-dev-tenant1-images',
                   key: '1PXv4nrKu/1566416583935.png',
                 },
               },

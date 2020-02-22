@@ -17,7 +17,7 @@ If you want to run it in your environment, then set up your environment and run 
 ## Infrastructure Acceptance Testing
  
 	* export AWS_SDK_LOAD_CONFIG=1
-	* export AWS_PROFILE=reams-dev
+	* export AWS_PROFILE=artb-dev
 	* Run the test suite: `npm run test:infrastructure-acceptance -- --stage $ENVIRONMENT --account $ACCOUNT`
 	* i.e npm run test:infrastructure-acceptance -- --stage victor --account dev
 
@@ -52,7 +52,7 @@ This is described more fully in the [Product & dev process document](https://doc
 In order to login to an account to execute the terraform or serverless code, it is assumed you have a AWS config file (~/.aws/config) setup as per the example in the doc and we can then use aws-azure-login to login to the "shared / iam" account :
 
 	export AWS_SDK_LOAD_CONFIG=1
-	export AWS_PROFILE=reams
+	export AWS_PROFILE=artb
 	aws-azure-login
 
 It is then necessary to use assume role across from the shared account, to the dev/test account as necessary (NB - only the build server and administrators have write access to non-dev accounts).
@@ -78,8 +78,8 @@ Developers are restricted in their access to test & production environments, to 
 
 In order to ensure code runs in these environments prior to review/merge it makes to execute a plan, against that environment. This can be done with the developers read only permissions (NB, may need to delete the local TF_STATE dir if it doesn't have the correct credentials).
 
-npm run terraform init test -- -- --backend-config="role_arn=arn:aws:iam::575536853050:role/REAMSDeveloperUserRole"
-npm run terraform plan test  -- -- -var "terraform__iam_role_arn=arn:aws:iam::575536853050:role/REAMSDeveloperUserRole"
+npm run terraform init test -- -- --backend-config="role_arn=arn:aws:iam::575536853050:role/ARTBDeveloperUserRole"
+npm run terraform plan test  -- -- -var "terraform__iam_role_arn=arn:aws:iam::575536853050:role/ARTBDeveloperUserRole"
 
 ### Setting Up dynamic resources which will be used for each environment/feature separately
 
@@ -99,7 +99,7 @@ SKIP_ACCEPTANCE_TESTS=true BUILD_OVERRIDE_STAGE=prod BUILD_OVERRIDE_ACCOUNT=prod
 
 To deploy the int environment in test (admin users only):
 
-export AWS_PROFILE=reams-test-admin
+export AWS_PROFILE=artb-test-admin
 npm run serverless-deploy -- --stage int --account test
 
 ## Deploying just the react app
@@ -203,7 +203,7 @@ npm run migrate:up -- --stage ${environment_name} --account ${account_name}
 
 The intention is to execute the migrations as part of the serverless deployment process, after the application is deployed, but before the API tests execute.
 
-## REAMS-AWS-APPSYNC
+## ARTB-AWS-APPSYNC
 
 We have forked our own version of the aws appsync library in order to make some changes to the offline behaviour - the hope is that in time our PR is merged and we can switch back to the standard npm package.
 
@@ -212,7 +212,7 @@ When user is offline and mutations are happened, the aws-appsync package stores 
 
 ### How to update it
 To fix above issue, we forked the repository and add some changes.
-aws-appsync is maintained by lerna so we published 'reams-aws-appsync' with lerna.
+aws-appsync is maintained by lerna so we published 'artb-aws-appsync' with lerna.
 This repo will be removed when aws-appsync fixed above issue.
 
 ### What we have changed

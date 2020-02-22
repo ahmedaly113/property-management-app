@@ -19,4 +19,4 @@ tenants:
 globalUser:
     identityPoolId: eu-west-2:86d66681-0f77-4f7d-b030-35c8ca346a5a
 adalConfig:
-  redirectUri: 'https://slav.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://slav.dev-aws.artb-elias.co.uk/azure'

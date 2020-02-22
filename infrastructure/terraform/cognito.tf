@@ -106,11 +106,11 @@ module "cognito_global_user" {
   elasticsearch_domain = "${var.elasticsearch__domain}"
 }
 
-module "cognito_reams_user" {
+module "cognito_artb_user" {
   source = "./modules/cognito"
 
-  cognito_user_pool_name        = "${var.resource__prefix}reams-user"
-  cognito_user_pool_client_name = "${var.resource__prefix}reams-user"
+  cognito_user_pool_name        = "${var.resource__prefix}artb-user"
+  cognito_user_pool_client_name = "${var.resource__prefix}artb-user"
 
   standard_tags = "${local.standard_tags}"
 }
@@ -171,12 +171,12 @@ output "cognito_global_user__web_client_secret" {
   value = "${module.cognito_global_user.web_client_secret}"
 }
 
-output "cognito_reams_user__web_client_id" {
-  value = "${module.cognito_reams_user.web_client_id}"
+output "cognito_artb_user__web_client_id" {
+  value = "${module.cognito_artb_user.web_client_id}"
 }
 
-output "cognito_reams_user__web_client_secret" {
-  value = "${module.cognito_reams_user.web_client_secret}"
+output "cognito_artb_user__web_client_secret" {
+  value = "${module.cognito_artb_user.web_client_secret}"
 }
 
 # * atkins

@@ -20,4 +20,4 @@ globalUser:
     identityPoolId: eu-west-2:0e6ab3d0-b6f5-453f-ab21-39d51c1010ca
 
 adalConfig:
-  redirectUri: 'https://eugen.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://eugen.dev-aws.artb-elias.co.uk/azure'

@@ -31,7 +31,7 @@ const configureAmplify = async (configInfo, tenantId) => {
     aws_appsync_authenticationType: 'AWS_IAM',
   })
   // console.log('logging in')
-  await Auth.signIn(`surveyor@${configInfo.tenants[tenantId].dns}`, 'Realm34$')
+  await Auth.signIn(`surveyor@${configInfo.tenants[tenantId].dns}`, 'Artb121$')
   // console.log('logged in', a)
 }
 

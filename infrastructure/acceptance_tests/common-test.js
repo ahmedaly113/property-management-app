@@ -6,7 +6,7 @@ const TEST_ACCOUNT = process.env.MWA_ACCOUNT || 'test'
 const TEST_STAGE = process.env.MWA_STAGE || 'int'
 export const TEST_SURVEYOR_EMAIL = 'surveyor@testtenant.com'
 export const TEST_CUSTOMER_EMAIL = 'customer@testtenant.com'
-export const TEST_PASSWORD = 'Realm34$'
+export const TEST_PASSWORD = 'Artb121$'
 
 export const configInfo = loadConfig(TEST_ACCOUNT, TEST_STAGE, 'application.yml')
 export const tenantId = Object.keys(configInfo.tenants).find(

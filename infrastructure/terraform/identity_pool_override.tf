@@ -135,21 +135,21 @@ module "identity_pool_global_user" {
   is_global_user     = true
 }
 
-module "identity_pool_reams_user" {
+module "identity_pool_artb_user" {
   source = "./modules/identity_pool"
 
-  cognito__identity_pool_name        = "${var.cognito__identity_pool_name}reams_tenant"
-  cognito__authenticated_role_name   = "${var.cognito__authenticated_role_name}reams_tenant"
-  cognito__authenticated_policy_name = "${var.cognito__authenticated_policy_name}reams_tenant"
-  cognito__user_pool_id              = "${module.cognito_reams_user.pool_id}"
-  cognito__user_pool_client_id       = "${module.cognito_reams_user.web_client_id}"
+  cognito__identity_pool_name        = "${var.cognito__identity_pool_name}artb_tenant"
+  cognito__authenticated_role_name   = "${var.cognito__authenticated_role_name}artb_tenant"
+  cognito__authenticated_policy_name = "${var.cognito__authenticated_policy_name}artb_tenant"
+  cognito__user_pool_id              = "${module.cognito_artb_user.pool_id}"
+  cognito__user_pool_client_id       = "${module.cognito_artb_user.web_client_id}"
 
   aws__account_id = "${var.aws__account_id}"
   aws__region     = "${var.aws__region}"
 
   # pinpoint__id                        = "${aws_pinpoint_app.pinpoint.application_id}"
   environments    = "${var.environments}"
-  s3__bucket_name = "${var.s3__reams_tenant_images}"
+  s3__bucket_name = "${var.s3__artb_tenant_images}"
 
   # openid__arn      = "${module.azure_ad_open_id_connect.arn}"
   resource__prefix = "${var.resource__prefix}"
@@ -334,8 +334,8 @@ output "identity_pool_id_global_user" {
   value = "${module.identity_pool_global_user.global_user_id}"
 }
 
-output "identity_pool_id_reams_user" {
-  value = "${module.identity_pool_reams_user.main_id}"
+output "identity_pool_id_artb_user" {
+  value = "${module.identity_pool_artb_user.main_id}"
 }
 
 output "identity_pool_id_atkins" {

@@ -44,12 +44,12 @@ const _ = require('lodash')
 const csv = require('fast-csv')
 const path = require('path')
 
-const auth = process.env.REAMS_JIRA_AUTH ? process.env.REAMS_JIRA_AUTH.split(':') : null;
+const auth = process.env.ARTB_JIRA_AUTH ? process.env.ARTB_JIRA_AUTH.split(':') : null;
 
 // console.log('includes', _.includes([1, 2, 3], 1))
 // process.exit()
 const opts = {
-  serverRoot: 'https://reams-elias.atlassian.net', // the base URL for the JIRA server
+  serverRoot: 'https://artb-elias.atlassian.net', // the base URL for the JIRA server
   jql: 'project=EMW AND issuetype != Epic', // the JQL
   // jql : 'key IN (EMW-859)', //,EMW-843,EMW-200,EMW-260
   fields: '*all', // the fields parameter for the JIRA search

@@ -20,4 +20,4 @@ globalUser:
     identityPoolId: eu-west-2:9eac7d6b-e0e3-457b-af41-fe94fe94e05d
 
 adalConfig:
-  redirectUri: 'https://nikita.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://nikita.dev-aws.artb-elias.co.uk/azure'

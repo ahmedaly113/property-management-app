@@ -20,4 +20,4 @@ globalUser:
     identityPoolId: eu-west-2:96aca94c-2254-4644-ae59-0f8fe95252d5
 
 adalConfig:
-  redirectUri: 'https://craig.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://craig.dev-aws.artb-elias.co.uk/azure'

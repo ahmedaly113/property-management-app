@@ -5,7 +5,7 @@ const { execSync } = require('child_process')
 const { loadConfig } = require('./get-config')
 
 // const authConfig = {
-//   reams : [
+//   artb : [
 //     {
 //       userName: 'conf-user1',
 //       password: 'MetalCrazyAllies@99',
@@ -83,11 +83,11 @@ const { loadConfig } = require('./get-config')
 const DEFAULT = [
   {
     userName: 'customer',
-    password: 'Realm34$',
+    password: 'Artb121$',
   },
   {
     userName: 'surveyor',
-    password: 'Realm34$',
+    password: 'Artb121$',
   },
 ]
 

@@ -101,7 +101,7 @@ resource "aws_iam_policy" "iam_appsync_lambda_s3_global_user_writer_policy" {
         "s3:PutObject*"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::reams-${var.account__name}-*"
+      "Resource": "arn:aws:s3:::artb-${var.account__name}-*"
     }
   ]
 }

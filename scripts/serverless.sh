@@ -31,7 +31,7 @@ elif [[ -z "$SKIP_PROFILE_CHECK" ]]; then
     echo "AWS_PROFILE env var does not include account name - suggests we're about to deploy to the wrong account. Please re-check and try again."
 
     echo
-    echo "export AWS_PROFILE=reams-$ACCOUNT is the likely solution";
+    echo "export AWS_PROFILE=artb-$ACCOUNT is the likely solution";
     echo
     echo
     exit;

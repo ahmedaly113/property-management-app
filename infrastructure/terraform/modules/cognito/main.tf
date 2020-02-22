@@ -59,7 +59,7 @@ resource "aws_cognito_user_pool_client" "client" {
 #   count         = "${var.is_kibana_auth ? 1 : 0}"
 #   user_pool_id  = "${aws_cognito_user_pool.pool.id}"
 #   provider_type = "SAML"
-#   provider_name = "REAMS_Office365"
+#   provider_name = "ARTB_Office365"
 
 #   provider_details = {
 #     MetadataURL = "https://login.microsoftonline.com/reamstest.onmicrosoft.com/FederationMetadata/2007-06/FederationMetadata.xml"

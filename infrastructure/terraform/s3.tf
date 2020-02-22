@@ -45,10 +45,10 @@ module "test_tenant_s3" {
   standard_tags = "${local.standard_tags}"
 }
 
-module "reams_tenant_s3" {
+module "artb_tenant_s3" {
   source = "./modules/s3"
 
-  bucket_name = "${var.s3__reams_tenant_images}"
+  bucket_name = "${var.s3__artb_tenant_images}"
   log_bucket  = "${aws_s3_bucket.log_bucket.id}"
   environment = "${var.account__name}"
 

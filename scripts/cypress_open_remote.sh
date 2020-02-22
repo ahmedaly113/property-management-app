@@ -9,4 +9,4 @@ if [ "$4" == "" ]; then
   ACCOUNT="test"
 fi
 
-CYPRESS_baseUrl=https://"$ENVIRONMENT"."$ACCOUNT"-aws.reams-elias.co.uk cypress open
+CYPRESS_baseUrl=https://"$ENVIRONMENT"."$ACCOUNT"-aws.artb-elias.co.uk cypress open

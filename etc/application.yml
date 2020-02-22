@@ -69,12 +69,12 @@ tenants:
     dummyDataEnable: false
 
   1111111-1111-1111-1111-111111111111:
-    name: REAMS Tenant
-    dns: reams-elias.co.uk
+    name: ARTB Tenant
+    dns: artb-elias.co.uk
     enabled: true
     legacy_project_id: 214
     legacy_hierarchy_id: 47
-    id: reams
+    id: artb
     cleanUp:
       lambdaDisabled: false
       localDisabled: false

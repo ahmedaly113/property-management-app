@@ -247,6 +247,6 @@ export const tenant = {
   virtual_asset_in_space: true,
   userPoolId: 'eu-west-2_FdbevO5s5',
   userPoolWebClientId: '4mf453i12tr7u7dn3i4un1ecfo',
-  assetImagesS3Bucket: 'reams-elias-mwa-dev-tenant1-images',
+  assetImagesS3Bucket: 'artb-elias-mwa-dev-tenant1-images',
   identityPoolId: 'eu-west-2:068e05f2-2a40-4755-aaa6-0add576f2f9f',
 }

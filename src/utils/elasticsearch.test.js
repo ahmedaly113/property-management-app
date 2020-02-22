@@ -115,7 +115,7 @@ describe('es authentication', () => {
       },
     })
 
-    return Auth.signIn(`customer@${dns}`, 'Realm34$').then(() =>
+    return Auth.signIn(`customer@${dns}`, 'Artb121$').then(() =>
       getAllAssets(accessingTenant).catch(err => {
         expect(err).toBeDefined()
       }),

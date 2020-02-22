@@ -23,7 +23,7 @@ done
 docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 test
 
 if [ "$2" == "INT" ]; then
-    SIT=https://int.test-aws.reams-elias.co.uk
+    SIT=https://int.test-aws.artb-elias.co.uk
 else
 	SIT=http://192.168.0.1:8000
 fi

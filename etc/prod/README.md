@@ -6,9 +6,9 @@ Configuration files with 'secret' values, for production accounts, accessing 're
 
 To decrypt the file:
 
-AWS_PROFILE=reams-prod-admin aws kms decrypt --ciphertext-blob fileb://etc/prod/secrets.cipher.yml --output text --query Plaintext | base64 --decode > etc/prod/secrets.yml
+AWS_PROFILE=artb-prod-admin aws kms decrypt --ciphertext-blob fileb://etc/prod/secrets.cipher.yml --output text --query Plaintext | base64 --decode > etc/prod/secrets.yml
 
 To encrypt the file:
 
-AWS_PROFILE=reams-prod-admin aws kms encrypt --key-id e6cd15aa-3398-4dcb-b324-17decda370bb --plaintext file://etc/prod/secrets.yml --output text --query CiphertextBlob | base64 --decode > etc/prod/secrets.cipher.yml
+AWS_PROFILE=artb-prod-admin aws kms encrypt --key-id e6cd15aa-3398-4dcb-b324-17decda370bb --plaintext file://etc/prod/secrets.yml --output text --query CiphertextBlob | base64 --decode > etc/prod/secrets.cipher.yml
 

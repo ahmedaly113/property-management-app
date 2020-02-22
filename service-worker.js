@@ -27,7 +27,7 @@ self.addEventListener('fetch', function(event) {
     )
     return
   }
-  if (!/https:\/\/reams-elias-mwa-.*-tenant\d-images.s3.*.\.amazonaws\.com\/.*\.(?:png|jpg|jpeg|svg)/.test(event.request.url)) {
+  if (!/https:\/\/artb-elias-mwa-.*-tenant\d-images.s3.*.\.amazonaws\.com\/.*\.(?:png|jpg|jpeg|svg)/.test(event.request.url)) {
     return
   }
   event.respondWith(

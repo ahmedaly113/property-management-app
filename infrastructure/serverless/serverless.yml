@@ -228,7 +228,7 @@ resources:
         AliasTarget:
           DNSName: {"Fn::GetAtt": ["cloudfrontDistribution", "DomainName"]}
           HostedZoneId: ${self:custom.hostedZoneId}
-        HostedZoneName: ${file(../scripts/config.js):config.dnsPrefix}-aws.reams-elias.co.uk.
+        HostedZoneName: ${file(../scripts/config.js):config.dnsPrefix}-aws.artb-elias.co.uk.
         Name: ${self:custom.siteName}.
         Type: 'A'
   Outputs:
@@ -240,7 +240,7 @@ resources:
       Value: ${file(../scripts/config.js):config.legacy_db.server}
 custom:
   accountId: ${file(../scripts/config.js):config.accountId}
-  siteName: ${opt:stage, 'int'}.${file(../scripts/config.js):config.dnsPrefix}-aws.reams-elias.co.uk
+  siteName: ${opt:stage, 'int'}.${file(../scripts/config.js):config.dnsPrefix}-aws.artb-elias.co.uk
   s3Origin: ${opt:stage, 'int'}.${file(../scripts/config.js):config.dnsPrefix}-origin
   certificateArn: ${file(../scripts/config.js):config.aws.ssl_cert}
   esIndexPrefix: ${opt:stage, 'int'}

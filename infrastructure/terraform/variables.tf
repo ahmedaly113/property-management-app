@@ -75,11 +75,11 @@ variable "iam__test_tenant_id" {
 
 variable "s3__test_tenant_images" {}
 
-variable "iam__reams_tenant_id" {
+variable "iam__artb_tenant_id" {
   default = "1111111-1111-1111-1111-111111111111"
 }
 
-variable "s3__reams_tenant_images" {}
+variable "s3__artb_tenant_images" {}
 
 # * atkins
 # * 20fcst
@@ -121,7 +121,7 @@ variable "terraform__branch" {
 }
 
 variable "terraform__iam_role_arn" {
-  default = "arn:aws:iam::136165052809:role/REAMSDeveloperUserRole"
+  default = "arn:aws:iam::136165052809:role/ARTBDeveloperUserRole"
 }
 
 variable "iam__open_id_connect_provider" {}

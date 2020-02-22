@@ -20,4 +20,4 @@ globalUser:
     identityPoolId: eu-west-2:ddf6c388-5544-43b1-8b9d-529ab455f3b1
 
 adalConfig:
-  redirectUri: 'https://nikola.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://nikola.dev-aws.artb-elias.co.uk/azure'

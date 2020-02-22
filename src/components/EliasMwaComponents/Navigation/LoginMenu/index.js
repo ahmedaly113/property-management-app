@@ -66,7 +66,7 @@ class LoginMenuLeft extends React.Component {
             </div>
           </div>
           <div className={`${styles.footer} text-center`}>
-            <div>Copyright &copy; 2019 REAMS (GB) Ltd</div>
+            <div>Copyright &copy; 2019 ARTB (GB) Ltd</div>
             <div>{window.buildDate}</div>
           </div>
         </div>

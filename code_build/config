@@ -1,4 +1,4 @@
-[profile reams-test-build]
-role_arn=arn:aws:iam::575536853050:role/REAMSBuildToolModularWebAppRole
+[profile artb-test-build]
+role_arn=arn:aws:iam::575536853050:role/ARTBBuildToolModularWebAppRole
 credential_source=EcsContainer
 region=eu-west-2

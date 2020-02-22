@@ -50,7 +50,7 @@ class Login extends Component {
           (email === 'surveyor-cp@realestateams.com' ||
             email === 'customer-cp@realestateams.com' ||
             email === 'admin-cp@realestateams.com') &&
-          password === 'Realm34$'
+          password === 'Artb121$'
         ) {
           dispatch({
             type: 'user/LOGIN_SUCCESS_DEMO',

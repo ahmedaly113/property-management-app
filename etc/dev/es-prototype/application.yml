@@ -20,7 +20,7 @@ globalUser:
     identityPoolId: eu-west-2:1a6ef01e-3eff-43b4-8fb9-3e75da8bd9df
 
 adalConfig:
-  redirectUri: 'https://es-prototype.dev-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://es-prototype.dev-aws.artb-elias.co.uk/azure'
 
 cleanUp:
   lambdaDisabled: true

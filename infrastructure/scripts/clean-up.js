@@ -96,7 +96,7 @@ const configureAmplify = async (configInfo, tenantId) => {
     aws_appsync_region: region,
     aws_appsync_authenticationType: 'AWS_IAM',
   })
-  await Auth.signIn(`surveyor@${configInfo.tenants[tenantId].dns}`, 'Realm34$')
+  await Auth.signIn(`surveyor@${configInfo.tenants[tenantId].dns}`, 'Artb121$')
 }
 
 const gql = (query, variables) =>
@@ -180,7 +180,7 @@ module.exports.cleanUp = async (configInfo, tenantId) => {
   const projectId = shortid.generate()
   const siteId = shortid.generate()
 
-  // If it is REAMS tenant, then add different data
+  // If it is ARTB tenant, then add different data
   if (tenantId === '1111111-1111-1111-1111-111111111111') {
     await createProject({
       createdAtClient: new Date().toISOString(),

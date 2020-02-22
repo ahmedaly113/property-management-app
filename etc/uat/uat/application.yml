@@ -27,7 +27,7 @@ googleAnalytics:
   trackingID: UA-139257782-4
 
 adalConfig:
-  redirectUri: 'https://uat.test-aws.reams-elias.co.uk/azure'
+  redirectUri: 'https://uat.test-aws.artb-elias.co.uk/azure'
 
 newRelicConfig:
   applicationId: 3881064

@@ -4,13 +4,13 @@ env:
   variables:
      # TF_LOG: DEBUG
      SKIP_PROFILE_CHECK: 1 
-     # AWS_PROFILE: reams-test-build
+     # AWS_PROFILE: artb-test-build
      AWS_SDK_LOAD_CONFIG: 1
 
      CYPRESS_NODES: 1
      USE_PARALLEL: false
 #   parameter-store:
-#      AWS_PROFILE: "reams-dev"
+#      AWS_PROFILE: "artb-dev"
 
 phases:
   install:
@@ -41,7 +41,7 @@ phases:
       # - mkdir -p ~/.aws
       # - cp ./code_build/config ~/.aws/config
       # - npm run test
-      # - export TF_CLI_ARGS="-backend-config=\"role_arn=arn:aws:iam::575536853050:role/REAMSBuildToolModularWebAppRole\""
+      # - export TF_CLI_ARGS="-backend-config=\"role_arn=arn:aws:iam::575536853050:role/ARTBBuildToolModularWebAppRole\""
       - npm run terraform init test
       # # - unset TF_CLI_ARGS
       - export TF_CLI_ARGS="-auto-approve"
@@ -50,7 +50,7 @@ phases:
       #For https://github.com/aws/aws-sdk-js/issues/1916
       - |
         unset AWS_PROFILE
-        temp_role=$(aws sts assume-role --role-arn arn:aws:iam::575536853050:role/REAMSBuildToolModularWebAppRole --role-session-name "REAMSBuildToolModularWebAppRole")
+        temp_role=$(aws sts assume-role --role-arn arn:aws:iam::575536853050:role/ARTBBuildToolModularWebAppRole --role-session-name "ARTBBuildToolModularWebAppRole")
 
         echo temp_role
 

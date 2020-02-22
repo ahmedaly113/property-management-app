@@ -8,7 +8,7 @@ To use:
 Generate an API token:
 https://confluence.atlassian.com/cloud/api-tokens-938839638.html
 
-export REAMS_JIRA_AUTH='=email:apikey'
+export ARTB_JIRA_AUTH='=email:apikey'
 
 Update the list of epics in get-jira-issues if necessary
 
@@ -24,27 +24,27 @@ Example queries:
 
 
 curl --request GET \
-  --user $REAMS_JIRA_AUTH \
-  --url 'https://reams-elias.atlassian.net/rest/api/3/applicationrole' \
+  --user $ARTB_JIRA_AUTH \
+  --url 'https://artb-elias.atlassian.net/rest/api/3/applicationrole' \
   --header 'Accept: application/json'
 
 curl --request GET \
-  --user $REAMS_JIRA_AUTH \
-  --url 'https://reams-elias.atlassian.net/rest/api/3/issue/EMW-604?expand=children-issues' \
+  --user $ARTB_JIRA_AUTH \
+  --url 'https://artb-elias.atlassian.net/rest/api/3/issue/EMW-604?expand=children-issues' \
   --header 'Accept: application/json'
 
 curl --request GET \
-  --user $REAMS_JIRA_AUTH \
-  --url 'https://reams-elias.atlassian.net/rest/api/3/issue/EMW-650' \
+  --user $ARTB_JIRA_AUTH \
+  --url 'https://artb-elias.atlassian.net/rest/api/3/issue/EMW-650' \
   --header 'Accept: application/json'
 
 curl --request GET \
-  --user $REAMS_JIRA_AUTH \
-  --url 'https://reams-elias.atlassian.net/rest/api/3/search?jql=project=EMW' \
+  --user $ARTB_JIRA_AUTH \
+  --url 'https://artb-elias.atlassian.net/rest/api/3/search?jql=project=EMW' \
   --header 'Accept: application/json'
 
 curl --request GET \
-  --user $REAMS_JIRA_AUTH \
-  --url 'https://reams-elias.atlassian.net/rest/graphql/1/' \
+  --user $ARTB_JIRA_AUTH \
+  --url 'https://artb-elias.atlassian.net/rest/graphql/1/' \
   --header 'Accept: application/json'
 
