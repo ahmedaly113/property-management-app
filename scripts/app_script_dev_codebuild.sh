@@ -6,6 +6,7 @@
 # Slav: 5b686224be179e3d03c8145d
 # Nikola: 5ca5f79cbb353819f2b5f2bc
 # Eugen: 5aef2a1e2317186dc96aa6d8
+# Ahmed: 5b24696882eafec353819f21
 
 ENVIRONMENT=""
 EMAIL="$(git log -1 --pretty=format:'%ae')"
@@ -20,6 +21,8 @@ elif [ "$CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID" == "5ca5f79cbb353819f2b5f2bc" ]; th
   ENVIRONMENT="nikola"
 elif [ "$CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID" == "5aef2a1e2317186dc96aa6d8" ]; then
   ENVIRONMENT="eugen"
+elif [ "$CODEBUILD_WEBHOOK_ACTOR_ACCOUNT_ID" == "5b24696882eafec353819f21" ]; then
+  ENVIRONMENT="ahmed"
 elif [ "$EMAIL" == "craig.edmunds@gmail.com" ]; then
   ENVIRONMENT="craig"
 fi
