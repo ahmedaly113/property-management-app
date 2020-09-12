@@ -22,7 +22,7 @@
     "moment": "^2.24.0",
     "mssql": "^4.3.2",
     "newrelic": "^5.11.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-json-transform": "^1.0.19",
     "sharp": "^0.23.3",
     "shortid": "^2.2.14"
