@@ -19,7 +19,7 @@
     "json2csv": "^4.5.3",
     "lodash": "^4.17.11",
     "middy": "^0.28.3",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mssql": "^4.3.2",
     "newrelic": "^5.11.0",
     "node-fetch": "^2.6.0",
