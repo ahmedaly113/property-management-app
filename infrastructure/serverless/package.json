@@ -24,7 +24,7 @@
     "newrelic": "^5.11.0",
     "node-fetch": "^2.6.0",
     "node-json-transform": "^1.0.19",
-    "sharp": "^0.23.3",
+    "sharp": "^0.30.5",
     "shortid": "^2.2.14"
   },
   "devDependencies": {
